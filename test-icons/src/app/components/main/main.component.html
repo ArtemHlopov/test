@@ -1,0 +1,7 @@
+<div class="wrapper">
+  <button (click)="generateRandomIcon()">GENERATE</button>
+  <div class="icon-block">
+    <h2>This is yout random icon:</h2>
+    <fa-icon *ngIf="prefix && name" [icon]="[prefix, name]"></fa-icon>
+  </div>
+</div>
